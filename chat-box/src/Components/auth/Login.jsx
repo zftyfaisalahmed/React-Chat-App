@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { NavLink } from 'react-router-dom';
 import imgSrc from '../../Images/pics';
 
 function Login(props) {
+  const femail=useRef();
+  const fpass=useRef();
+
+  const submitHandler=async (e)=>{
+    e.preventDefault()
+    let data={
+      email:femail.current.value,
+      password:fpass.current.value
+    }
+    console.log(data)
+  }
   return (
     <div>
       <div className="container">
@@ -16,7 +27,7 @@ function Login(props) {
             <div className="title">
               Login Here
             </div>
-            <form autoComplete='off'>
+            <form autoComplete='off' onClick={submitHandler}>
 
               <div className="form-item">
                 <label htmlFor="email">Enter your email</label>

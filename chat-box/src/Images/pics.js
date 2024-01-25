@@ -1,9 +1,11 @@
-import loginImg from '../Images/logIn.svg'
-import signUpImg from '../Images/signUp.svg'
+import loginImage from './login.svg'
+import signUpImage from './register.svg'
+import signUpImage1 from './reg-1.svg'
 
-const imgSrc={
-  loginImg,
-  signUpImg
+const imgSrc = {
+    loginImage,
+    signUpImage,
+    signUpImage1
 }
 
 export default imgSrc

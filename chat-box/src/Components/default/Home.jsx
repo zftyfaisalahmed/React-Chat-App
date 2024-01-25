@@ -1,9 +1,10 @@
 import React from 'react'
 import Chatcontainer from '../chat/Chatcontainer';
+import './Home.scss'
 
 const Home = () => {
   return (
-    <div>
+    <div className='app-body'>
         <Chatcontainer />
     </div>
   )
